@@ -8,10 +8,19 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "fs": "^0.0.1-security",
     "request": "^2.88.2",
-    "steam-webapi": "^0.6.5"
-  }
+    "steam-webapi": "^0.6.5",
+    "steamapi": "^2.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cameronjohnstonmusic/jabo-achievement-tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cameronjohnstonmusic/jabo-achievement-tracker/issues"
+  },
+  "homepage": "https://github.com/cameronjohnstonmusic/jabo-achievement-tracker#readme",
+  "description": ""
 }

@@ -14,11 +14,14 @@ var achievementsEarned = 0;
 
 function getAchievements() {
     console.log('Script Started');
-    //maxApi.outlet(url);
+    //maxApi.post(url);
     request(url, (error, response, body) => {
+        console.log('Req Started');
         if (!error && response.statusCode == 200) {
             const data = JSON.parse(body);
-            //console.log(data);
+
+
+            // console.log(data);
 
 
 
@@ -32,7 +35,7 @@ function getAchievements() {
                 const achievement = achievements[i];
 
                 if (achievement.achieved) {
-                    achievementsEarned++
+                    achievementsEarned++;
                     const achievementTime = achievement.unlocktime
                     if (achievementTime > lastAchievementTime) {
                         lastAchievement = achievement.apiname;
@@ -51,8 +54,11 @@ function getAchievements() {
 
 
         }
+
     }
+
     )
+    //maxApi.post(url);
 };
 
 maxApi.addHandler("bang", (msg) => {
