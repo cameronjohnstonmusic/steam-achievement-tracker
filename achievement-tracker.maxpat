@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 268.0, 183.0, 667.0, 365.0 ],
+		"rect" : [ 599.0, 197.0, 345.0, 149.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,85 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-62",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 196.0, 75.0, 55.0, 22.0 ],
+					"text" : "del 1000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-61",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 184.0, 40.0, 55.0, 22.0 ],
+					"text" : "del 1000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-60",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 184.0, 10.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 253.0, 115.0, 63.0, 22.0 ],
+					"text" : "script stop"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 324.0, 115.0, 64.0, 22.0 ],
+					"text" : "script start"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "bang" ],
+					"patching_rect" : [ 291.666666666666629, 53.0, 42.0, 22.0 ],
+					"text" : "t b b b"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-44",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 6.0, 161.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 27.666666666666629, 65.0, 145.0, 20.0 ],
+					"presentation_rect" : [ 23.666666666666629, 57.0, 145.0, 20.0 ],
 					"text" : "Last Achievement Earned"
 				}
 
@@ -59,7 +131,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 6.0, 118.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 27.666666666666629, 36.0, 129.0, 20.0 ],
+					"presentation_rect" : [ 23.666666666666629, 28.0, 129.0, 20.0 ],
 					"text" : "Achievements Earned:"
 				}
 
@@ -169,7 +241,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 904.0, 681.0, 75.0, 22.0 ],
-					"text" : "100 100 100"
+					"text" : "255 255 255"
 				}
 
 			}
@@ -220,8 +292,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 383.666666666666629, 412.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 158.666666666666629, 34.0, 50.0, 22.0 ],
-					"text" : "37/84"
+					"presentation_rect" : [ 154.666666666666629, 26.0, 50.0, 22.0 ],
+					"text" : "43/84"
 				}
 
 			}
@@ -329,16 +401,19 @@
 			}
 , 			{
 				"box" : 				{
+					"allowdrag" : 0,
 					"id" : "obj-15",
+					"ignoreclick" : 1,
 					"items" : [ "War", "Never", "Changes", ",", "When", "Freedom", "Calls", ",", "Unlikely", "Valentine", ",", "Reunions", ",", "Dangerous", "Minds", ",", "Hunter", "Hunted", ",", "The", "Molecular", "Level", ",", "The", "Nuclear", "Option", ",", "Institutionalized", ",", "Mankind", "Redefined", ",", "Powering", "Up", ",", "Nuclear", "Family", ",", "The", "First", "Step", ",", "Taking", "Independence", ",", "Old", "Guns", ",", "Semper", "Invicta", ",", "Blind", "Betrayal", ",", "Ad", "Victoriam", ",", "Tradecraft", ",", "Underground", "Undercover", ",", "Rockets", "Red", "Glare", ",", "Sanctuary", ",", "Community", "Organizer", ",", "Benevolent", "Leader", ",", "Gun-For-Hire", ",", "Mercenary", ",", "Scavver", ",", "What’s", "Yours", "Is", "Mine", ",", "Robco’s", "Worst", "Nightmare", ",", "Armed", "And", "Dangerous", ",", "Wasteland", "D.I.Y.", ",", "Never", "Go", "It", "Alone", ",", "Lovable", ",", "Fix-Er-Upper", ",", "Future", "Retro", ",", "The", "Harder", "They", "Fall", ",", "Ranger", "Corps", ",", "Print’s", "Not", "Dead", ",", "Prankster’s", "Return", ",", "Masshole", ",", "Animal", "Control", ",", "Homerun", ",", "Touchdown", ",", "They’re", "Not", "Dolls", ",", "They’re", "Action", "Figures", ",", "Born", "Survivor", ",", "Commonwealth", "Citizen", ",", "Unstoppable", "Wanderer", ",", "Legend", "of", "the", "Wastes", ",", "Prepared", "for", "the", "Future", ",", "Mechanical", "Menace", ",", "Headhunting", ",", "Restoring", "Order", ",", "Robot", "Hunter", ",", "The", "Most", "Toys", ",", "Docile", ",", "Instigator", ",", "Trapper", ",", "Far", "From", "Home", ",", "Where", "You", "Belong", ",", "The", "Way", "Life", "Should", "Be", ",", "Cleansing", "The", "Land", ",", "Close", "To", "Home", ",", "The", "Islander’s", "Almanac", ",", "Hooked", ",", "New", "England", "Vacationer", ",", "Push", "Back", "The", "Fog", ",", "Just", "Add", "Saltwater", ",", "Show", "Off", ",", "Time", "Out", ",", "Mass", "Production", ",", "Oversight", ",", "Better", "Living", "Underground", ",", "Vault", "Dweller", ",", "Raiding", "For", "A", "Living", ",", "Diebrarian", ",", "Beverageer", ",", "Hostile", "Takeover", ",", "All", "Sugared", "Up", ",", "Eyes", "on", "the", "Prize", ",", "Taken", "for", "a", "Ride", ",", "The", "Grand", "Tour", ",", "Home", "Sweet", "Home", ",", "Power", "Play" ],
 					"maxclass" : "umenu",
+					"menumode" : 2,
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 14.0, 462.5, 185.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 27.666666666666629, 90.5, 185.0, 22.0 ]
+					"presentation_rect" : [ 23.666666666666629, 82.5, 185.0, 22.0 ]
 				}
 
 			}
@@ -438,7 +513,7 @@
 					"outlettype" : [ "jit_matrix", "" ],
 					"patching_rect" : [ 202.666666666666629, 549.0, 231.0, 160.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 226.666666666666629, 34.0, 104.0, 87.0 ],
+					"presentation_rect" : [ 222.666666666666629, 26.0, 104.0, 87.0 ],
 					"sync" : 1
 				}
 
@@ -527,30 +602,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 244.666666666666657, 315.0, 147.0, 22.0 ],
 					"text" : "fromsymbol @separator _"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-36",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 196.0, 71.0, 55.0, 22.0 ],
-					"text" : "del 1000"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-35",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 196.0, 44.0, 58.0, 22.0 ],
-					"text" : "loadbang"
 				}
 
 			}
@@ -706,6 +757,27 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-13", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"source" : [ "obj-13", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-62", 0 ],
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
 					"source" : [ "obj-14", 0 ]
 				}
@@ -822,6 +894,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
 					"source" : [ "obj-34", 0 ]
 				}
@@ -829,15 +908,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-36", 0 ],
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-35", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"source" : [ "obj-36", 0 ]
 				}
 
 			}
@@ -970,6 +1042,27 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-61", 0 ],
+					"source" : [ "obj-60", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-61", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-62", 0 ]
 				}
 
 			}

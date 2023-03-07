@@ -36,6 +36,7 @@ function getAchievements() {
 
                 if (achievement.achieved) {
                     achievementsEarned++;
+
                     const achievementTime = achievement.unlocktime
                     if (achievementTime > lastAchievementTime) {
                         lastAchievement = achievement.apiname;
@@ -62,6 +63,6 @@ function getAchievements() {
 };
 
 maxApi.addHandler("bang", (msg) => {
-    setInterval(getAchievements, 1000);
+    setInterval(getAchievements, 3000);
 });
 
