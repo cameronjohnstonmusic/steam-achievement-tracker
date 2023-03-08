@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 599.0, 197.0, 345.0, 149.0 ],
+		"rect" : [ 749.0, 119.0, 350.0, 151.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,74 @@
 		"subpatcher_template" : "Sidebar",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 606.0, 93.0, 91.0, 22.0 ],
+					"text" : "statusvisible $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 602.0, 63.0, 61.0, 22.0 ],
+					"text" : "pipe 1000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 602.0, 31.0, 70.0, 22.0 ],
+					"text" : "loadmess 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 606.0, 122.0, 67.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"allwindowsactive" : 0,
+						"appicon_mac" : "",
+						"appicon_win" : "",
+						"audiosupport" : 1,
+						"bundleidentifier" : "com.mycompany.myprogram",
+						"cantclosetoplevelpatchers" : 1,
+						"cefsupport" : 1,
+						"copysupport" : 1,
+						"database" : 0,
+						"extensions" : 1,
+						"gensupport" : 1,
+						"midisupport" : 1,
+						"noloadbangdefeating" : 0,
+						"overdrive" : 0,
+						"preffilename" : "Max 8 Preferences",
+						"searchformissingfiles" : 1,
+						"statusvisible" : 0,
+						"usesearchpath" : 0
+					}
+,
+					"text" : "standalone"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-62",
 					"maxclass" : "newobj",
@@ -710,8 +778,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 1
 					}
 ,
@@ -878,6 +944,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-36", 0 ],
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-33", 1 ],
 					"order" : 1,
 					"source" : [ "obj-29", 0 ]
@@ -910,6 +983,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-36", 0 ]
 				}
 
 			}
@@ -1077,6 +1157,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}
