@@ -7,7 +7,11 @@ const fs = require('fs');
 const apiKey = '3126611CE224BFFCC077ED7AE9412484'
 const steamID = '76561198142407697';
 const gameID = '377160';
+
+
+
 const url = 'http://api.steampowered.com/ISteamUserStats/GetPlayerAchievements/v0001/?appid=' + gameID + '&key=' + apiKey + '&steamid=' + steamID
+
 var lastAchievementTime = 0;
 var lastAchievement;
 var achievementsEarned = 0;
