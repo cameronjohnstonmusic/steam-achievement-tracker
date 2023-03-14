@@ -1,8 +1,8 @@
 {
-	"name" : "jabo-tracker",
+	"name" : "jabo achievement tracker",
 	"version" : 1,
 	"creationdate" : 3761179041,
-	"modificationdate" : 3761186164,
+	"modificationdate" : 3761618855,
 	"viewrect" : [ 23.0, 112.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 1,
@@ -24,7 +24,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -34,7 +34,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -44,7 +44,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -54,7 +54,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -64,7 +64,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -74,7 +74,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -84,7 +84,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -94,7 +94,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -104,7 +104,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -114,7 +114,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -124,7 +124,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -134,7 +134,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -144,7 +144,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -154,7 +154,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -164,7 +164,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -174,7 +174,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -184,7 +184,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -194,7 +194,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -204,7 +204,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -214,7 +214,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -224,7 +224,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -234,7 +234,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -244,7 +244,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -254,7 +254,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -264,7 +264,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -274,7 +274,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -284,7 +284,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -294,7 +294,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -304,7 +304,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -314,7 +314,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -324,7 +324,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -334,7 +334,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -344,7 +344,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -354,7 +354,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -364,7 +364,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -374,7 +374,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -384,7 +384,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -394,7 +394,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -404,7 +404,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -414,7 +414,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -424,7 +424,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -434,7 +434,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -444,7 +444,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -454,7 +454,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -464,7 +464,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -474,7 +474,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -484,7 +484,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -494,7 +494,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -504,7 +504,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -514,7 +514,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -524,7 +524,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -534,7 +534,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -544,7 +544,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -554,7 +554,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -564,7 +564,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -574,7 +574,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -584,7 +584,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -594,7 +594,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -604,7 +604,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -614,7 +614,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -624,7 +624,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -634,7 +634,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -644,7 +644,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -654,7 +654,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -664,7 +664,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -674,7 +674,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -684,7 +684,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -694,7 +694,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -704,7 +704,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -714,7 +714,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -724,7 +724,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -734,7 +734,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -744,7 +744,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -754,7 +754,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -764,7 +764,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -774,7 +774,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -784,7 +784,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -794,7 +794,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -804,7 +804,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -814,7 +814,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -824,7 +824,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -834,7 +834,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -844,7 +844,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
@@ -854,7 +854,7 @@
 				"local" : 1,
 				"singleton" : 				{
 					"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-					"projectrelativepath" : "../../Documents/Programming/jabo achievement tracker"
+					"projectrelativepath" : "."
 				}
 
 			}
