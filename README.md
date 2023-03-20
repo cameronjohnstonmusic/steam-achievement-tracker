@@ -1,3 +1,6 @@
+If you like my work consider donating to support more projects!
+hhttps://ko-fi.com/cjxyz
+
 Installing and Setting Up Steam Achievement Tracker Stream Overlay
 
 See guide with images here: https://docs.google.com/document/d/1cOEb08vyI1qMYgD680Uwg1Z0VZ33Url84lMTWjTYfdE/edit?usp=sharing 
