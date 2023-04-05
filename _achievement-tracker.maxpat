@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 848.0, 209.0, 428.0, 218.0 ],
+		"rect" : [ 852.0, 209.0, 424.0, 436.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -411,54 +411,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-52",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 667.0, 97.800000131130219, 55.0, 22.0 ],
-					"text" : "del 2000"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-45",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 487.0, 89.0, 55.0, 22.0 ],
-					"text" : "del 2000"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-35",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 428.000003635883331, 51.200000166893005, 55.0, 22.0 ],
-					"text" : "del 1000"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-41",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 428.000003635883331, 21.200000166893005, 58.0, 22.0 ],
-					"text" : "loadbang"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-30",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -755,8 +707,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 395.666666666666629, 411.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 146.666666666666629, 17.0, 29.5, 22.0 ],
-					"text" : "0/0"
+					"presentation_rect" : [ 146.666666666666629, 17.0, 55.5, 22.0 ]
 				}
 
 			}
@@ -1039,42 +990,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-7",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 667.0, 133.0, 141.0, 22.0 ],
-					"text" : "script npm install request"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 487.0, 133.0, 176.0, 22.0 ],
-					"text" : "script npm install steam-webapi"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 395.0, 133.0, 83.0, 22.0 ],
-					"text" : "script npm init"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1090,6 +1005,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 497.0, 235.0, 400.0, 220.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 15.666666666666629, 205.0, 400.0, 220.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1097,20 +1014,24 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 196.0, 183.0, 247.0, 22.0 ],
+					"patching_rect" : [ 196.0, 183.0, 247.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.666666666666629, 116.0, 247.0, 22.0 ],
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 15.666666666666629, 106.0, 205.0, 35.0 ],
 					"saved_object_attributes" : 					{
-						"autostart" : 0,
+						"autostart" : 1,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 1
 					}
 ,
-					"text" : "node.script achievement-tracker.js @watch 1"
+					"text" : "node.script achievement-tracker.js @watch 1 @autostart 1"
 				}
 
 			}
@@ -1359,22 +1280,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-45", 0 ],
-					"order" : 0,
-					"source" : [ "obj-35", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"order" : 1,
-					"source" : [ "obj-35", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-36", 0 ]
 				}
@@ -1397,13 +1302,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-35", 0 ],
-					"source" : [ "obj-41", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
 					"source" : [ "obj-42", 0 ]
 				}
@@ -1413,22 +1311,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-46", 0 ],
 					"source" : [ "obj-43", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-52", 0 ],
-					"order" : 0,
-					"source" : [ "obj-45", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"order" : 1,
-					"source" : [ "obj-45", 0 ]
 				}
 
 			}
@@ -1455,13 +1337,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-5", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-55", 0 ],
 					"order" : 1,
 					"source" : [ "obj-51", 0 ]
@@ -1478,22 +1353,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-30", 0 ],
-					"order" : 1,
-					"source" : [ "obj-52", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
-					"order" : 0,
-					"source" : [ "obj-52", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-51", 0 ],
 					"source" : [ "obj-54", 0 ]
 				}
@@ -1503,13 +1362,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
 					"source" : [ "obj-59", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-6", 0 ]
 				}
 
 			}
@@ -1531,13 +1383,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-58", 0 ],
 					"source" : [ "obj-66", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-7", 0 ]
 				}
 
 			}
@@ -1699,28 +1544,28 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "achievement-tracker.js",
-				"bootpath" : "~/Documents/Programming/jabo achievement tracker",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Programming/steam-achievement-tracker/code",
+				"patcherrelativepath" : "./code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fit_jweb_to_bounds.js",
-				"bootpath" : "~/Documents/Programming/jabo achievement tracker/code",
+				"bootpath" : "~/Documents/Programming/steam-achievement-tracker/code",
 				"patcherrelativepath" : "./code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "n4m.monitor.maxpat",
-				"bootpath" : "~/Documents/Programming/jabo achievement tracker/patchers",
+				"bootpath" : "~/Documents/Programming/steam-achievement-tracker/patchers",
 				"patcherrelativepath" : "./patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "resize_n4m_monitor_patcher.js",
-				"bootpath" : "~/Documents/Programming/jabo achievement tracker/code",
+				"bootpath" : "~/Documents/Programming/steam-achievement-tracker/code",
 				"patcherrelativepath" : "./code",
 				"type" : "TEXT",
 				"implicit" : 1
