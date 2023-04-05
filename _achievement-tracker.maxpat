@@ -1019,15 +1019,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 196.0, 183.0, 247.0, 35.0 ],
+					"patching_rect" : [ 196.0, 183.0, 251.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 15.666666666666629, 106.0, 205.0, 35.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 1
 					}
 ,
@@ -1374,6 +1372,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-62", 0 ],
+					"source" : [ "obj-61", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-62", 0 ]
 				}
@@ -1544,8 +1549,8 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "achievement-tracker.js",
-				"bootpath" : "~/Documents/Programming/steam-achievement-tracker/code",
-				"patcherrelativepath" : "./code",
+				"bootpath" : "~/Documents/Programming/steam-achievement-tracker/node_content",
+				"patcherrelativepath" : "./node_content",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
