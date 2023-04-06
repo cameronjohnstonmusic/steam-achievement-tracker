@@ -2,7 +2,7 @@
 	"name" : "steam-achievement-tracker",
 	"version" : 1,
 	"creationdate" : 3761179041,
-	"modificationdate" : 3763513633,
+	"modificationdate" : 3763564934,
 	"viewrect" : [ 23.0, 112.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 1,
@@ -36,6 +36,19 @@
 ,
 			"resize_n4m_monitor_patcher.js" : 			{
 				"kind" : "javascript",
+				"local" : 1
+			}
+
+		}
+,
+		"other" : 		{
+			"SAT.icns" : 			{
+				"kind" : "file",
+				"local" : 1
+			}
+,
+			"SAT.ico" : 			{
+				"kind" : "file",
 				"local" : 1
 			}
 

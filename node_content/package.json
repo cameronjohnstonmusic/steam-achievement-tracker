@@ -1,7 +1,6 @@
 {
   "name": "steam-achievement-tracker",
   "version": "1.0.0",
-  "description": "",
   "main": "achievement-tracker.js",
   "dependencies": {
     "ajv": "^6.12.6",
@@ -74,5 +73,7 @@
   "bugs": {
     "url": "https://github.com/cameronjohnstonmusic/steam-achievement-tracker/issues"
   },
-  "homepage": "https://github.com/cameronjohnstonmusic/steam-achievement-tracker#readme"
+  "homepage": "https://github.com/cameronjohnstonmusic/steam-achievement-tracker#readme",
+  "devDependencies": {},
+  "description": ""
 }

@@ -5,38 +5,13 @@ const fs = require('fs');
 const axios = require('axios');
 
 
-var apiKey;
-var steamID;
-var gameID;
-
-maxApi.addHandler('bang', (msg) => {
-    maxApi.post(url);
-    setInterval(getAchievements, 3000);
-});
-
-maxApi.addHandler('apiKey', (msg) => {
-    
-apiKey = msg;
-	maxApi.post(apiKey);
-});
-
-maxApi.addHandler('steam', (msg) => {
-    
-steamID = msg;
-	maxApi.post(steamID);
-});
-
-maxApi.addHandler('gameID', (msg) => {
-    
-	gameID = msg;
-	maxApi.post(gameID);
-});
+const apiKey = '3126611CE224BFFCC077ED7AE9412484'
+const steamID = '76561198142407697';
+const gameID = '22380';
 
 
 
-
-
-var url;
+const url = 'http://api.steampowered.com/ISteamUserStats/GetPlayerAchievements/v1/?appid=' + gameID + '&key=' + apiKey + '&steamid=' + steamID
 
 
 var lastAchievementTime = 0;
@@ -46,9 +21,8 @@ var achievementsEarned = 0;
 let lastDownloadedAchievement = null;
 
 function getAchievements() {
-	url = 'http://api.steampowered.com/ISteamUserStats/GetPlayerAchievements/v1/?appid=' + gameID + '&key=' + apiKey + '&steamid=' + steamID;
     console.log('Script Started');
-    maxApi.post(url);
+    //maxApi.post(url);
     request(url, (error, response, body) => {
         //maxApi.post(body);
 
@@ -157,3 +131,9 @@ async function totalAchievments() {
     }
 }
 
+maxApi.addHandler(bang, (msg) => {
+    maxApi.post(url);
+    setInterval(getAchievements, 3000);
+});
+
+ 
