@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 88.0, 406.0, 438.0, 559.0 ],
+		"rect" : [ 131.0, 342.0, 438.0, 559.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -2120,8 +2120,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 1
 					}
 ,
@@ -3255,7 +3253,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"order" : 0,
+					"source" : [ "obj-90", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-89", 0 ],
+					"order" : 1,
 					"source" : [ "obj-90", 0 ]
 				}
 
@@ -3321,6 +3328,13 @@
 				"name" : "fit_jweb_to_bounds.js",
 				"bootpath" : "~/Documents/Programming/steam-achievement-tracker/code",
 				"patcherrelativepath" : "./code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "keys.txt",
+				"bootpath" : "~/Desktop",
+				"patcherrelativepath" : "../../../Desktop",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
