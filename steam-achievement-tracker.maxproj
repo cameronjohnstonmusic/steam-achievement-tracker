@@ -2,7 +2,7 @@
 	"name" : "steam-achievement-tracker",
 	"version" : 1,
 	"creationdate" : 3761179041,
-	"modificationdate" : 3763989464,
+	"modificationdate" : 3764008905,
 	"viewrect" : [ 23.0, 112.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 1,
@@ -42,6 +42,11 @@
 		}
 ,
 		"data" : 		{
+			"keys.txt" : 			{
+				"kind" : "textfile",
+				"local" : 1
+			}
+,
 			"report.txt" : 			{
 				"kind" : "textfile",
 				"local" : 1
@@ -57,6 +62,11 @@
 ,
 			"SAT.ico" : 			{
 				"kind" : "file",
+				"local" : 1
+			}
+,
+			"isDarkMode.html" : 			{
+				"kind" : "webpage",
 				"local" : 1
 			}
 

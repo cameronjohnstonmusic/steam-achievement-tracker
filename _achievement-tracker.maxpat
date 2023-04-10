@@ -41,6 +41,42 @@
 		"title" : " Steam Achievement Tracker",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-129",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 1589.5, 569.0, 61.0, 22.0 ],
+					"text" : "savebang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 287.0, 3.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 360.0, 354.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-184",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -233,18 +269,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-176",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1175.0, 502.0, 35.0, 22.0 ],
-					"text" : "clear"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-174",
 					"maxclass" : "button",
 					"numinlets" : 1,
@@ -252,18 +276,6 @@
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 894.0, -18.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-167",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1175.0, 473.5, 42.0, 22.0 ],
-					"text" : "r clear"
 				}
 
 			}
@@ -688,13 +700,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 1354.0, 493.0, 50.5, 22.0 ],
+					"patching_rect" : [ 1354.0, 493.0, 71.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"precision" : 6
 					}
 ,
-					"text" : "coll"
+					"text" : "coll keys.txt"
 				}
 
 			}
@@ -900,7 +912,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 590.0, 25.0, 100.0, 50.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 307.0, 196.0, 122.0, 50.0 ]
+					"presentation_rect" : [ 307.0, 196.0, 122.0, 50.0 ],
+					"text" : "22380"
 				}
 
 			}
@@ -919,6 +932,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-126",
+					"linecount" : 2,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -926,7 +940,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 488.0, 25.0, 100.0, 50.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 165.666666666666629, 196.0, 126.0, 50.0 ]
+					"presentation_rect" : [ 165.666666666666629, 196.0, 126.0, 50.0 ],
+					"text" : "76561198142407697"
 				}
 
 			}
@@ -945,6 +960,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-122",
+					"linecount" : 3,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -952,7 +968,9 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 386.0, 25.0, 100.0, 50.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 196.0, 129.0, 50.0 ]
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 20.0, 196.0, 129.0, 50.0 ],
+					"text" : "3126611CE224BFFCC077ED7AE9412484"
 				}
 
 			}
@@ -1474,11 +1492,12 @@
 				"box" : 				{
 					"dontreplace" : 1,
 					"id" : "obj-98",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 6.0, 388.5, 112.0, 22.0 ],
+					"patching_rect" : [ 6.0, 388.5, 112.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 15.666666666666629, 75.0, 145.0, 22.0 ]
 				}
@@ -1931,12 +1950,11 @@
 				"box" : 				{
 					"dontreplace" : 1,
 					"id" : "obj-33",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 395.666666666666629, 411.0, 50.0, 35.0 ],
+					"patching_rect" : [ 395.666666666666629, 411.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 146.666666666666629, 17.0, 55.5, 22.0 ]
 				}
@@ -2252,8 +2270,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 1
 					}
 ,
@@ -2524,6 +2540,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-191", 0 ],
+					"source" : [ "obj-129", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-135", 0 ],
 					"source" : [ "obj-131", 0 ]
 				}
@@ -2704,6 +2727,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-59", 0 ],
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-156", 0 ],
 					"source" : [ "obj-160", 0 ]
 				}
@@ -2727,13 +2757,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-57", 0 ],
 					"source" : [ "obj-165", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-176", 0 ],
-					"source" : [ "obj-167", 0 ]
 				}
 
 			}
@@ -2792,13 +2815,6 @@
 					"destination" : [ "obj-172", 0 ],
 					"order" : 1,
 					"source" : [ "obj-175", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-156", 0 ],
-					"source" : [ "obj-176", 0 ]
 				}
 
 			}
@@ -2935,6 +2951,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"order" : 1,
+					"source" : [ "obj-20", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-47", 0 ],
 					"order" : 1,
 					"source" : [ "obj-20", 0 ]
@@ -2975,7 +2999,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-87", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-20", 2 ]
 				}
 
@@ -3054,6 +3078,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
 					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"source" : [ "obj-35", 0 ]
 				}
 
 			}
@@ -3541,8 +3572,8 @@
 			}
 , 			{
 				"name" : "keys.txt",
-				"bootpath" : "~/Desktop",
-				"patcherrelativepath" : "../../../Desktop",
+				"bootpath" : "~/Documents/Programming/steam-achievement-tracker/data",
+				"patcherrelativepath" : "./data",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -3563,7 +3594,10 @@
  ],
 		"autosave" : 0,
 		"toolbaradditions" : [ "browsegendsp", "browsegenjit", "audiosolo", "audiomute" ],
-		"toolbarexclusions" : [ "browsevizzie", "browsebeap", "omnibrowser", "keymap", "grid", "autolockunselected" ]
+		"toolbarexclusions" : [ "browsevizzie", "browsebeap", "omnibrowser", "keymap", "grid", "autolockunselected" ],
+		"textcolor" : [ 0.129, 0.129, 0.129, 1.0 ],
+		"bgcolor" : [ 0.894117647058824, 0.894117647058824, 0.894117647058824, 1.0 ],
+		"editing_bgcolor" : [ 0.898, 0.898, 0.898, 1.0 ]
 	}
 
 }

@@ -82,6 +82,8 @@ async function getAchievements() {
 
         maxApi.outlet('achievementsEarned', achievementsEarned);
 
+if (achievementsEarned != 0) {
+
         if (highestAchievement || (!lastDownloadedAchievement && highestAchievement.apiname !== lastDownloadedAchievement.apiname)) {
             downloadAchievementIcon(gameID, highestAchievement.apiname);
             lastDownloadedAchievement = highestAchievement;
@@ -93,7 +95,10 @@ async function getAchievements() {
             totalAchievments(apiKey, gameID);
         }
 
-
+} else {
+	totalAchievments(apiKey, gameID);
+	
+	}
 
     });
 };
