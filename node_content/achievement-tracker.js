@@ -38,6 +38,9 @@ maxApi.addHandler('gameID', (msg) => {
 
 let lastDownloadedAchievement;
 let achievementsEarned = 0;
+let achievementLast2;
+
+
 
 
 
@@ -70,7 +73,7 @@ async function getAchievements() {
                 //maxApi.post(achievement);
 
                 const achievementTime = achievement.unlocktime;
-                if (achievementTime > highestAchievement.unlocktime) {
+                if (!highestAchievement || achievementTime > highestAchievement.unlocktime) {
                     highestAchievement = achievement;
                     console.log(highestAchievement)
                 }
@@ -79,13 +82,15 @@ async function getAchievements() {
 
         maxApi.outlet('achievementsEarned', achievementsEarned);
 
-        if (highestAchievement && (!lastDownloadedAchievement || highestAchievement.apiname !== lastDownloadedAchievement.apiname)) {
+        if (highestAchievement || (!lastDownloadedAchievement && highestAchievement.apiname !== lastDownloadedAchievement.apiname)) {
             downloadAchievementIcon(gameID, highestAchievement.apiname);
             lastDownloadedAchievement = highestAchievement;
+            totalAchievments(apiKey, gameID);
         }
 
         if (achievementsEarned == 0) {
             maxApi.outlet('achievementsEarned', 0);
+            totalAchievments(apiKey, gameID);
         }
 
 
@@ -94,46 +99,51 @@ async function getAchievements() {
 };
 
 async function downloadAchievementIcon(gameID, achievementLast) {
-    try {
-        const response = await axios.get(
-            `https://api.steampowered.com/ISteamUserStats/GetSchemaForGame/v2/?key=${apiKey}&appid=${gameID}`
-        );
-        const achievements = response.data.game.availableGameStats.achievements;
-        const achievement = response.data.game.availableGameStats.achievements.find(
-            (a) => a.name === achievementLast
-        );
-        const index = achievements.indexOf(achievement);
-        //console.log(index);
-        if (!achievement) {
-            throw new Error(
-                `Achievement ${achievementLast} not found for game ID ${gameID}`
+
+    if (achievementLast != achievementLast2) {
+        maxApi.post('finding icon');
+        try {
+            const response = await axios.get(
+                `https://api.steampowered.com/ISteamUserStats/GetSchemaForGame/v2/?key=${apiKey}&appid=${gameID}`
             );
+            const achievements = response.data.game.availableGameStats.achievements;
+            const achievement = response.data.game.availableGameStats.achievements.find(
+                (a) => a.name === achievementLast
+            );
+            const index = achievements.indexOf(achievement);
+            //console.log(index);
+            if (!achievement) {
+                throw new Error(
+                    `Achievement ${achievementLast} not found for game ID ${gameID}`
+                );
+            }
+            maxApi.outlet(
+                "lastAchievement",
+                response.data.game.availableGameStats.achievements[index].displayName
+            );
+            const iconUrl = achievement.icon;
+            const iconHash = iconUrl.substring(
+                iconUrl.lastIndexOf("/") + 1,
+                iconUrl.lastIndexOf(".")
+            );
+            const iconCdnUrl = `https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/${gameID}/${iconHash}.jpg`;
+            //maxApi.post(iconCdnUrl);
+            const writer = fs.createWriteStream("achievement-icon.jpg");
+            const response2 = await axios.get(iconCdnUrl, { responseType: "stream" });
+            response2.data.pipe(writer);
+            await new Promise((resolve, reject) => {
+                writer.on("finish", resolve);
+                writer.on("error", reject);
+            });
+            maxApi.post("Achievement icon downloaded");
+        } catch (error) {
+            console.error(error);
         }
-        maxApi.outlet(
-            "lastAchievement",
-            response.data.game.availableGameStats.achievements[index].displayName
-        );
-        const iconUrl = achievement.icon;
-        const iconHash = iconUrl.substring(
-            iconUrl.lastIndexOf("/") + 1,
-            iconUrl.lastIndexOf(".")
-        );
-        const iconCdnUrl = `https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/${gameID}/${iconHash}.jpg`;
-        //maxApi.post(iconCdnUrl);
-        const writer = fs.createWriteStream("achievement-icon.jpg");
-        const response2 = await axios.get(iconCdnUrl, { responseType: "stream" });
-        response2.data.pipe(writer);
-        await new Promise((resolve, reject) => {
-            writer.on("finish", resolve);
-            writer.on("error", reject);
-        });
-        console.log("Achievement icon downloaded");
-    } catch (error) {
-        console.error(error);
+        achievementLast2 = achievementLast;
     }
 }
 
-async function totalAchievments() {
+async function totalAchievments(apiKey, gameID) {
     try {
         const response = await axios.get(
             `https://api.steampowered.com/ISteamUserStats/GetSchemaForGame/v2/?key=${apiKey}&appid=${gameID}`

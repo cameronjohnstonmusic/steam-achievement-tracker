@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 953.0, 139.0, 438.0, 559.0 ],
+		"rect" : [ 941.0, 80.0, 438.0, 559.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -120,7 +120,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1919.274206638336182, 107.0, 99.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "appicon_mac $1"
 				}
 
@@ -1475,12 +1474,11 @@
 				"box" : 				{
 					"dontreplace" : 1,
 					"id" : "obj-98",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 6.0, 388.5, 112.0, 35.0 ],
+					"patching_rect" : [ 6.0, 388.5, 112.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 15.666666666666629, 75.0, 145.0, 22.0 ]
 				}
@@ -1710,7 +1708,7 @@
 					"saved_object_attributes" : 					{
 						"allwindowsactive" : 0,
 						"appicon_mac" : "Macintosh HD:/Users/CameronJohnston/Documents/Programming/steam-achievement-tracker/other/SAT.icns",
-						"appicon_win" : "Macintosh HD:/Users/CameronJohnston/Documents/Programming/steam-achievement-tracker/other/SAT.ico",
+						"appicon_win" : "SAT.ico",
 						"audiosupport" : 1,
 						"bundleidentifier" : "com.mycompany.myprogram",
 						"cantclosetoplevelpatchers" : 1,
@@ -1933,11 +1931,12 @@
 				"box" : 				{
 					"dontreplace" : 1,
 					"id" : "obj-33",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 395.666666666666629, 411.0, 50.0, 22.0 ],
+					"patching_rect" : [ 395.666666666666629, 411.0, 50.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 146.666666666666629, 17.0, 55.5, 22.0 ]
 				}
@@ -2121,13 +2120,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-58",
-					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_matrix", "bang", "" ],
-					"patching_rect" : [ 1170.0, 873.708984375, 138.0, 49.0 ],
-					"text" : "jit.world @dim 720 480 @size 818 480 @name tracker"
+					"patching_rect" : [ 1170.0, 873.708984375, 355.0, 22.0 ],
+					"text" : "jit.world @dim 720 480 @size 818 480 @name \"Tracker Display\""
 				}
 
 			}
@@ -2254,6 +2252,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 1
 					}
 ,
