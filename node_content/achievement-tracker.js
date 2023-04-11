@@ -15,7 +15,7 @@ var gameID;
 maxApi.addHandler('bang', (msg) => {
     //maxApi.post(url);
 
-    setInterval(getAchievements, 10000);
+    setInterval(getAchievements, 3000);
 });
 
 maxApi.addHandler('apiKey', (msg) => {
@@ -39,69 +39,56 @@ maxApi.addHandler('gameID', (msg) => {
 let lastDownloadedAchievement;
 let achievementsEarned = 0;
 let achievementLast2;
+//let lastAchievementTime;
 
 
 
 
 
-async function getAchievements() {
-    url = 'http://api.steampowered.com/ISteamUserStats/GetPlayerAchievements/v1/?appid=' + gameID + '&key=' + apiKey + '&steamid=' + steamID;
+
+function getAchievements() {
+    const url = `https://api.steampowered.com/ISteamUserStats/GetPlayerAchievements/v1/?appid=${gameID}&key=${apiKey}&steamid=${steamID}`
 
     maxApi.post(url);
     console.log('Script Started');
     achievementsEarned = 0;
 
-    request(url, function (error, response, body) {
+    request.get(url, (error, response, body) => {
         if (error) {
             console.error(error);
             return;
         }
 
-        const data = JSON.parse(body);
-        //console.log(data);
-        const achievements = data.playerstats.achievements;
+        const data = JSON.parse(body).playerstats;
+        const achievements = data.achievements;
 
+        const achievedAchievements = achievements.filter((achievement) => achievement.achieved === 1);
+        achievementsEarned = achievedAchievements.length;
 
         let highestAchievement;
+        for (const achievement of achievedAchievements) {
 
-        for (let i = 0; i < achievements.length; i++) {
-            const achievement = achievements[i];
-
-
-            if (achievement.achieved == 1) {
-                achievementsEarned++
-                //maxApi.post(achievement);
-
-                const achievementTime = achievement.unlocktime;
-                if (!highestAchievement || achievementTime > highestAchievement.unlocktime) {
-                    highestAchievement = achievement;
-                    console.log(highestAchievement)
-                }
+            const achievementTime = achievement.unlocktime;
+            if (!highestAchievement || achievementTime > highestAchievement.unlocktime) {
+                highestAchievement = achievement;
+                //lastAchievementTime = achievementTime;
+                console.log(highestAchievement)
             }
         }
 
         maxApi.outlet('achievementsEarned', achievementsEarned);
 
-if (achievementsEarned != 0) {
-
-        if (highestAchievement || (!lastDownloadedAchievement && highestAchievement.apiname !== lastDownloadedAchievement.apiname)) {
+        if (highestAchievement && (!lastDownloadedAchievement || highestAchievement.apiname !== lastDownloadedAchievement.apiname)) {
             downloadAchievementIcon(gameID, highestAchievement.apiname);
             lastDownloadedAchievement = highestAchievement;
-            totalAchievments(apiKey, gameID);
         }
 
-        if (achievementsEarned == 0) {
-            maxApi.outlet('achievementsEarned', 0);
-            totalAchievments(apiKey, gameID);
-        }
-
-} else {
-	totalAchievments(apiKey, gameID);
-	
-	}
-
+        totalAchievements(apiKey, gameID); // Move this line outside of the if-else block
     });
-};
+}
+
+
+
 
 async function downloadAchievementIcon(gameID, achievementLast) {
 
@@ -148,7 +135,7 @@ async function downloadAchievementIcon(gameID, achievementLast) {
     }
 }
 
-async function totalAchievments(apiKey, gameID) {
+async function totalAchievements(apiKey, gameID) {
     try {
         const response = await axios.get(
             `https://api.steampowered.com/ISteamUserStats/GetSchemaForGame/v2/?key=${apiKey}&appid=${gameID}`
@@ -159,3 +146,6 @@ async function totalAchievments(apiKey, gameID) {
         console.error(error);
     }
 }
+
+
+
