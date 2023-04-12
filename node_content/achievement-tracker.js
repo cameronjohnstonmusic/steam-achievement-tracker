@@ -6,6 +6,13 @@ const maxApi = require('max-api');
 const fs = require('fs');
 const axios = require('axios');
 
+const SteamCommunity = require('steamcommunity');
+const community = new SteamCommunity();
+var SteamID = SteamCommunity.SteamID;
+
+const SteamAPI = require('steamapi');
+
+
 
 
 var apiKey;
@@ -16,24 +23,25 @@ maxApi.addHandler('bang', (msg) => {
     //maxApi.post(url);
 
     setInterval(getAchievements, 3000);
+    //getAchievements();
 });
 
 maxApi.addHandler('apiKey', (msg) => {
 
     apiKey = msg;
-    maxApi.post(apiKey);
+    //maxApi.post(apiKeyMax);
 });
 
 maxApi.addHandler('steam', (msg) => {
 
     steamID = msg;
-    maxApi.post(steamID);
+    //maxApi.post(steamIDMax);
 });
 
 maxApi.addHandler('gameID', (msg) => {
 
     gameID = msg;
-    maxApi.post(gameID);
+    // maxApi.post(gameIDMax);
 });
 
 let lastDownloadedAchievement;
@@ -45,47 +53,69 @@ let achievementLast2;
 
 
 
+async function getAchievements() {
+    const steam = new SteamAPI(apiKey);
 
-function getAchievements() {
-    const url = `https://api.steampowered.com/ISteamUserStats/GetPlayerAchievements/v1/?appid=${gameID}&key=${apiKey}&steamid=${steamID}`
 
-    maxApi.post(url);
-    console.log('Script Started');
-    achievementsEarned = 0;
 
-    request.get(url, (error, response, body) => {
-        if (error) {
-            console.error(error);
-            return;
-        }
 
-        const data = JSON.parse(body).playerstats;
-        const achievements = data.achievements;
+    const test = steam.get(`/ISteamUserStats/GetPlayerAchievements/v1/?appid=${gameID}&key=${apiKey}&steamid=${steamID}`).then(summary => {
+        //console.log(summary.playerstats.achievements);
+        //console.log(test.achievements.apiname);
+        const unlockedAchievements = summary.playerstats.achievements.filter(a => a.achieved === 1);
+        const sortedAchievements = unlockedAchievements.sort((a, b) => b.unlocktime - a.unlocktime);
+        const mostRecentAchievement = sortedAchievements[0];
+        console.log(mostRecentAchievement);
+        downloadAchievementIcon(gameID, mostRecentAchievement.apiname);
+        console.log(`Most recent achievement: (${mostRecentAchievement.apiname})`);
 
-        const achievedAchievements = achievements.filter((achievement) => achievement.achieved === 1);
-        achievementsEarned = achievedAchievements.length;
+        maxApi.outlet('achievementsEarned', unlockedAchievements.length);
+        totalAchievements(apiKey, gameID);
 
-        let highestAchievement;
-        for (const achievement of achievedAchievements) {
+        console.log(`Total achievements unlocked: ${unlockedAchievements.length}`);
 
-            const achievementTime = achievement.unlocktime;
-            if (!highestAchievement || achievementTime > highestAchievement.unlocktime) {
-                highestAchievement = achievement;
-                //lastAchievementTime = achievementTime;
-                console.log(highestAchievement)
-            }
-        }
 
-        maxApi.outlet('achievementsEarned', achievementsEarned);
 
-        if (highestAchievement && (!lastDownloadedAchievement || highestAchievement.apiname !== lastDownloadedAchievement.apiname)) {
-            downloadAchievementIcon(gameID, highestAchievement.apiname);
-            lastDownloadedAchievement = highestAchievement;
-        }
-
-        totalAchievements(apiKey, gameID); // Move this line outside of the if-else block
     });
 }
+
+// async function getMostRecentAchievement() {
+//     const steam = new SteamAPI(apiKey);
+//     try {
+
+
+//         // Get the recently played games for the user
+//         const recentGames = await steam.getUserRecentGames(steamID);
+
+//         // Find the game you're interested in by appid, or use the first one
+//         const game = recentGames[0];
+//         //console.log(game);
+
+//         // Get the schema for the game
+//         const gameSchema = await steam.getGameSchema(game.appID);
+
+//         // Get the achievements for the game
+//         const achievements = gameSchema.availableGameStats.achievements;
+//         console.log(achievements);
+
+//         // Find the unlocked achievements for the user
+//         const unlockedAchievements = achievements.filter(a => a.achieved === 1);
+
+//         // Sort the unlocked achievements by unlocktime
+//         const sortedAchievements = unlockedAchievements.sort((a, b) => b.unlocktime - a.unlocktime);
+
+//         // Get the most recent unlocked achievement
+//         const mostRecentAchievement = sortedAchievements[0];
+//         console.log(mostRecentAchievement);
+
+//         // Do something with the most recently unlocked achievement
+//         // downloadAchievementIcon(game.appid, mostRecentAchievement.name);
+//     } catch (err) {
+//         console.error(err);
+//     }
+// }
+
+
 
 
 

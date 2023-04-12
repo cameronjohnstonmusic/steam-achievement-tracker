@@ -54,6 +54,7 @@
     "steam-user": "^4.28.1",
     "steam-webapi": "^0.6.5",
     "steamapi": "^2.2.0",
+    "steamcommunity": "^3.44.3",
     "steamid": "^2.0.0",
     "tough-cookie": "^2.5.0",
     "tunnel-agent": "^0.6.0",

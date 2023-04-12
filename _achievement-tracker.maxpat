@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 2172.0, 1000.0, 438.0, 559.0 ],
+		"rect" : [ 893.0, 267.0, 438.0, 559.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -46,8 +46,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 41.5, 21.0, 127.0, 22.0 ],
-					"text" : "script npm install fetch"
+					"patching_rect" : [ 41.5, 21.0, 150.0, 22.0 ],
+					"text" : "script npm install steamapi"
 				}
 
 			}
@@ -2366,8 +2366,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 1
 					}
 ,
@@ -2927,13 +2925,6 @@
 					"destination" : [ "obj-172", 0 ],
 					"order" : 1,
 					"source" : [ "obj-175", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-185", 0 ],
-					"source" : [ "obj-176", 0 ]
 				}
 
 			}
