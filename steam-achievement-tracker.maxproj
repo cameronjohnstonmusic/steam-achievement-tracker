@@ -2,7 +2,7 @@
 	"name" : "steam-achievement-tracker",
 	"version" : 1,
 	"creationdate" : 3761179041,
-	"modificationdate" : 3764008905,
+	"modificationdate" : 3764170316,
 	"viewrect" : [ 23.0, 112.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 1,
@@ -17,6 +17,11 @@
 			}
 ,
 			"n4m.monitor.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"websiteTracker.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
