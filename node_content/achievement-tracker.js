@@ -31,19 +31,21 @@ maxApi.addHandler('bang', (msg) => {
 maxApi.addHandler('apiKey', (msg) => {
 
     apiKey = msg;
-    //maxApi.post(apiKeyMax);
+    maxApi.post(apiKey);
 });
 
-maxApi.addHandler('steam', (msg) => {
 
-    steamID = msg;
-    //maxApi.post(steamIDMax);
+maxApi.addHandler('steam', (msg) => {
+	maxApi.post(msg);
+const largeNumber = BigInt('76561198142407696')
+    steamID = largeNumber + BigInt(msg);
+    maxApi.post(steamID.toString());
 });
 
 maxApi.addHandler('gameID', (msg) => {
 
     gameID = msg;
-    // maxApi.post(gameIDMax);
+     maxApi.post(gameID);
 });
 
 let lastDownloadedAchievement;
