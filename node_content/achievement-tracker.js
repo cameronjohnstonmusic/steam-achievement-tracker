@@ -1,5 +1,5 @@
 
-
+const fetch = require('fetch');
 const steamAPI = require('steam-webapi');
 const request = require('request');
 const maxApi = require('max-api');

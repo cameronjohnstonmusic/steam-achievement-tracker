@@ -41,6 +41,18 @@
 		"title" : " Steam Achievement Tracker",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-187",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 530.0, 201.0, 127.0, 22.0 ],
+					"text" : "script npm install fetch"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-118",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -3124,6 +3136,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-190", 0 ],
 					"source" : [ "obj-186", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-187", 0 ]
 				}
 
 			}
