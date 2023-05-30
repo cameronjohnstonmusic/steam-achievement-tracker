@@ -80,5 +80,6 @@
     "url": "https://github.com/cameronjohnstonmusic/steam-achievement-tracker/issues"
   },
   "homepage": "https://github.com/cameronjohnstonmusic/steam-achievement-tracker#readme",
+  "devDependencies": {},
   "description": ""
 }
